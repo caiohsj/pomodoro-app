@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
     <title>Pomodoro App</title>
 </head>
 <body>
-    
+    <header>
+        <div class="top-menu">
+            <div class="logo">
+                <h1>Pomodoro App</h1>
+            </div>
+            <div class="menu-configurations">
+                <form>
+                    <div class="input-group">
+                        <label for="timer-pomodoro">Tempo do pomodoro</label>
+                        <input id="timer-pomodoro" type="text" value="25"/>
+                        <small>minutos</small>
+                    </div>
+                    <div class="input-group">
+                        <label for="timer-interval">Tempo do intervalo</label>
+                        <input id="timer-interval" type="text" value="5"/>
+                        <small>minutos</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="timer">
+            <h1 class="minutes">0</h1>
+            <h1>:</h1>
+            <h1 class="seconds">0</h1>
+        </div>
+        <div class="play-timer">
+            <a class="btn-play">Começar</a>
+        </div>
+    </main>
+<script src="js/app.js"></script>
 </body>
 </html>

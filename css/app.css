@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-menu {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-configurations form {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.menu-configurations form input {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .timer h1 {
+    display: inline;
+}
+
+main .play-timer {
+    margin-top: 30px;
+}
+
+main .play-timer .btn-play {
+    padding: 20px 40px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #00b894;
+    color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+main .play-timer .btn-play:hover {
+    cursor: pointer;
+    background: #55efc4;
+    box-shadow: #55efc4 3px 2px 3px 3px;
+}
+
+@media(max-width: 568px) {
+    .top-menu {
+        padding-top: 10px;
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-configurations form input {
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        font-size: 1em;
+    }
+    main {
+        height: 300px;
+    }
+}
