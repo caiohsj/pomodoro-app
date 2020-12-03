@@ -44,12 +44,12 @@ buttonInterval.addEventListener('click', function(event) {
 
 function initLabelMinutesAndLabelSecondsForPomodoro() {
     labelMinutes.innerHTML = timerPomodoro.value - 1;
-    labelSeconds.innerHTML = 5;
+    labelSeconds.innerHTML = 59;
 }
 
 function initLabelMinutesAndLabelSecondsForInterval() {
     labelMinutes.innerHTML = timerInterval.value - 1;
-    labelSeconds.innerHTML = 5;
+    labelSeconds.innerHTML = 59;
 }
 
 function setLabelMinutesAndLabelSeconds() {
@@ -76,7 +76,9 @@ function showButtons() {
 
 function sendNotifications() {
     alert('Sugerimos que descanse 10 minutos agora');
-    new Notification('Sugerimos que descanse 10 minutos agora');
+    if (Notification.permission === 'granted') {
+        new Notification('Sugerimos que descanse 10 minutos agora');
+    }
 }
 
 function decreaseSecond() {
