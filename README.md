@@ -1,10 +1,10 @@
 # Pomodo App
 
 ## Desktop
-![image]()
+![image](https://github.com/caiohsj/pomodoro-app/blob/master/screenshots/desktop.jpg)
 
 ## Mobile
-![image]()
+![image](https://github.com/caiohsj/pomodoro-app/blob/master/screenshots/mobile.JPG)
 
 ## Objetivo:
 Criar uma ferramenta para auxiliar quem trabalha com o método pomodoro
