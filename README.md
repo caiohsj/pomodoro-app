@@ -1,12 +1,13 @@
 # Pomodo App
 
 ## Desktop
-![image](http://caiohsj.rf.gd/pomodoro-app/desktop.JPG)
+[![image](http://caiohsj.rf.gd/pomodoro-app/desktop.JPG)]
 
 ## Mobile
-![image](http://caiohsj.rf.gd/pomodoro-app/mobile.JPG)
+[![image](http://caiohsj.rf.gd/pomodoro-app/mobile.JPG)]
 
-*Objetivo*: Criar uma ferramenta para auxiliar quem trabalha com o método pomodoro
+## Objetivo:
+Criar uma ferramenta para auxiliar quem trabalha com o método pomodoro
 
 ## Escopo
 * Timer 25 min: O timer deve conter uma tela com os minutos e segundos regressivamente;
