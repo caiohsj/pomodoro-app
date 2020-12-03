@@ -88,9 +88,12 @@ function decreaseSecond() {
         } else if (labelMinutes.textContent > 0) {
             setLabelMinutesAndLabelSeconds();
         } else {
+            let soundedAlarm = false;
             if (count < 3 && activeInterval == false) {
                 count++;
             } else if (count == 3 && activeInterval == false) {
+                alarm.play();
+                soundedAlarm = true;
                 sendNotifications();
                 count = 0;
             }
@@ -103,7 +106,9 @@ function decreaseSecond() {
             setCount(count);
             showButtons();
             setLabelAmountOfPomodoros(amountOfPomodoros);
-            alarm.play();
+            if (soundedAlarm == false) {
+                alarm.play();
+            }
             clearInterval(interval);
         }
     }
