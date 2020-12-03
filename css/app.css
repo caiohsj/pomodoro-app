@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+audio {
+    display: none;
+}
+
 .top-menu {
     max-width: 1300px;
     margin: 0 auto;
@@ -68,6 +72,23 @@ main .play-timer .btn-play:hover {
     cursor: pointer;
     background: #55efc4;
     box-shadow: #55efc4 3px 2px 3px 3px;
+}
+
+main .play-timer .btn-play-interval {
+    padding: 20px 40px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #d63031;
+    color: #ffffff;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+main .play-timer .btn-play-interval:hover {
+    cursor: pointer;
+    background: #ff7675;
+    box-shadow: #ff7675 3px 2px 3px 3px;
 }
 
 @media(max-width: 568px) {
