@@ -54,7 +54,7 @@ function initLabelMinutesAndLabelSecondsForInterval() {
 
 function setLabelMinutesAndLabelSeconds() {
     labelMinutes.innerHTML = labelMinutes.textContent - 1;
-    labelSeconds.innerHTML = 5;
+    labelSeconds.innerHTML = 59;
 }
 
 function setLabelAmountOfPomodoros(value) {
@@ -75,9 +75,10 @@ function showButtons() {
 }
 
 function sendNotifications() {
-    alert('Sugerimos que descanse 10 minutos agora');
     if (Notification.permission === 'granted') {
         new Notification('Sugerimos que descanse 10 minutos agora');
+    } else {
+        alert('Sugerimos que descanse 10 minutos agora');
     }
 }
 
